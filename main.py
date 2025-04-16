@@ -80,7 +80,7 @@ class WeatherApp(QWidget):
         self.setLayout(main_layout)
 
     def get_data(self):
-        API_KEY = "5a0632f060e187eca9562204a04b997c"
+        API_KEY = "YOUR API KEY"
         url = f"http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={API_KEY}&units=metric&lang=en"
 
         response = requests.get(url)
